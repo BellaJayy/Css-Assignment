@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up page</title>
+    <style>
+        
+    
+        body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: aliceblue;
+    /* max-width: 900px; */
+    width: 90%;
+    padding-top: 80px;
+    margin: 20px auto;
+    gap: 20px;
+    height: 90vh;
+    padding-inline: 30px;
+    padding-bottom:50px ;
+   
+}
+select {
+    background-color: #fff;
+}
+
+.container-left,
+.container-right {
+    flex: 1;
+    padding: 15px;
+}
+
+.container-left{
+   margin-right: 0; 
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.container-left img{
+    display: block;
+    margin-bottom: 0px;
+    
+}
+
+.container-right{
+    background-color: #fff; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 5px;
+    /* width: 90px; */
+    padding-right: 50px;
+    height:100%;
+    padding-bottom: 75px;
+
+}
+
+h2{
+    margin: 0;
+}
+
+.form {
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 50px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+   
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    background-color:rgb(46, 196, 182);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    border-color: #4CAF50; 
+    background-color: #259e98; 
+
+}
+input:hover {
+            border-color: #4CAF50; 
+         
+        }
+
+p{
+    margin-bottom: 5px;
+}
+
+
+    
+
+/* Media query for laptop screens (1024px to 1440px) */
+@media screen and (max-width: 1000px) {
+    .container {
+        padding-block: 15px;
+        gap: 15px;
+    }
+    .container-left,
+    .container-right {
+        padding: 10px;
+    }
+    .form-row {
+        gap: 30px;
+    }
+}
+
+/* Media query for mobile screens (up to 767px) */
+@media screen and (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        padding-block: 10px;
+        gap: 10px;
+        min-height: auto;
+    }
+
+    .container-right {
+        width: 100%;
+        padding-right: 10px;
+        margin-top: 20px;
+        box-shadow: none;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    input[type="submit"] {
+        padding: 15px;
+    }
+}
+
+  
+    </style>
+</head>
+<body>
+    
+<div class="container">
+    <div class="container-left">
+        <img src="Logo.png" alt="logo" width="100px">
+
+    <h2>For Individuals</h2>
+
+    <p> Start benefiting from the wellness experience. For companies lokking on increasing productivity, and improving organization wellness </p>
+    </div>
+
+    <div class="container-right">
+
+        <form class="form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label>First Name</label>
+                    <input type="text" id="fname">
+                </div>
+                    
+                <div class="form-group">
+                    <label>Last Name</label>
+                    <input type="text" id="lname">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="Gender">Gender</label>
+                <select id="Gender">
+                    <option value="" disabled selected hidden>Select here</option>
+                    <option value="M"> Male</option>
+                    <option value="F"> Female</option>
+                </select>
+                </div>
+                <div class="form-group">
+                    <label>Date of Birth</label>
+                    <input type="date" id="bday">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Weight (KG)</label>
+                    <input type="number" id="weight" placeholder="Enter Weight">
+                </div>
+                <div class="form-group">
+                    <label>Height (CM)</label>
+                    <input type="number" id="height" placeholder="Enter height here">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="level">Activity Level</label>
+            <select id="activity">
+                <option value="" disabled selected hidden>Select here</option>
+                <option value=""> Nil</option>
+                <option value=""> Nil</option>
+            </select>
+            </div>
+            <div class="form-group">
+                <label for="Password">Password</label> 
+                <input type="password" id="password">
+            </div>
+            
+            <input type="submit" value="Register">
+            <p>
+                By clicking Register, you agree to our 
+                <a href="terms_of_use.html" target="_blank">Terms of Use</a> 
+                and our 
+                <a href="privacy_policy.html" target="_blank">Privacy Policy</a>.
+            </p>
+        </form>
+    </div>
+    </div>
+</div>
+
+</body>
+</html>
