@@ -1,0 +1,405 @@
+body{
+    font-family: 'Roboto', sans-serif;  
+    line-height: 1.6; 
+    background-color:#fefefe;
+    text-align: center; 
+  
+  }
+nav{
+    font-size: 15px;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 50px;
+    background-color: #fefefe;
+
+
+}   
+#URL{
+    padding-top: 15px;
+    color: blue;
+}
+.nav-logo {
+    padding-top: 10px;
+    padding-right: 100px;
+}
+.nav-button{
+    padding-top: 15px;
+    padding-left: 170px;
+border-radius: 20px;
+text-decoration: none;
+    
+}
+#log{
+    color: blue;
+    margin: 0;
+    margin: 0%;
+    border: none;
+    background-color: transparent;
+  
+}
+#try{
+    color:white;
+    background-color: blue;
+    border-radius: 20px;
+    padding: 7px;
+    border-color: transparent;
+}
+.sign-up{
+    color:white;
+    background-color: blue;
+    border-radius: 20px;
+    padding: 5px;
+    border-color: transparent;
+    width: 100px;
+}
+.Learn-more{
+    color: blue;
+    margin: 0;
+    margin: 0%;
+    border: none;
+    background-color: transparent;
+  
+}
+.button2{
+background-color: transparent;
+display: flex;
+gap: 20px;
+padding-left: 450px;
+padding-bottom: 50px;
+padding-top: 20px;
+}
+#scissors-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ gap: 30px;
+ text-align: left;
+}
+.QR-Code{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ gap: 30px;
+ text-align: left;
+ padding-left: 30%;
+}
+
+.pricing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ gap:none;
+ text-align: left;
+ padding-top: 80px;
+}
+.get-price{
+    color: blue;
+    margin: 0;
+    margin: 0%;
+    border: 1%;
+    background-color: transparent;
+    border-radius: 20px;
+    border-color: blue;
+    padding: 9px;
+    width:200px;
+}
+.select-price{
+    color:white;
+    background-color: blue;
+    border-radius: 20px;
+    padding: 5px;
+    border-color: transparent;
+    width: 150px;
+}
+.Basic{
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 5%;
+}
+.Team{
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 5%;
+}
+.Professional{
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 8%;
+    background-color: #1E3448;
+color: white;
+}
+.form{
+    background-image: url('./images/form-logo.jpeg');
+    height: 50vh;
+    padding-top: 0.25rem;
+    padding-bottom: 3rem;
+}
+
+.form-container{
+    width: 55vh;
+    height:40vh;
+    margin: 50px auto;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    color: blue;
+    border-radius: 10px;
+    gap: 50px;
+    padding-top: 30px;
+}
+input.paste{
+    padding: 8px;
+    border: 1px solid blue;
+    border-radius:10px ;
+    width: 80%;
+}
+input::placeholder{
+    color: blue;
+}
+.typeA{
+    color: blue;
+    padding: 5px;
+    border: 1px solid blue;
+    border-radius:5px ;
+    width: 40%;
+}
+#form-space{
+    padding-top: 10px;
+    gap: 100px;
+padding-bottom: 15px;
+}
+.domain{
+    color: blue;
+    padding: 5px;
+    border: 1px solid blue;
+    border-radius:5px ;
+    width: 40%;
+
+}
+
+.Trim{
+    background-color: blue;
+    color: white;
+    width: 80%;
+    border-radius: 20px;
+    padding: 10px;
+}
+.Policy{
+    color: blue;
+    font-size:small;
+
+}
+.faq{
+  display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    padding-left: 100px;
+    border-bottom: 1px solid #ccc;
+    
+}
+.F{
+    text-align: center;
+}
+#page-5{
+    background-image: url('./images/form-logo.jpeg');
+    height: 20vh;
+    padding-top: 0.25rem;
+    padding-bottom: 3rem;
+}
+
+.Get-Started{
+    color:white;
+    background-color: blue;
+    border-radius: 20px;
+    padding: 5px;
+    border-color: transparent;
+    width: 150px;
+}
+.last-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ gap: 15%;
+ text-align: left;
+}
+.last-page2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ gap: 15%;
+ text-align: left;
+ padding-left: 30%;
+}
+.footer{
+    font-size:small;
+    align-items: end;
+   text-align: end;
+   padding: 50px;
+}
+
+dia Query for Laptops (1024px and below) */
+@media (max-width: 1024px) {
+    body {
+        font-size: 16px;
+        padding: 20px;
+    }
+    nav {
+        font-size: 14px;
+        gap: 30px;
+    }
+    .nav-logo {
+        padding-right: 50px;
+    }
+    .nav-button {
+        padding-left: 100px;
+    }
+    #scissors-text, .QR-Code, .pricing {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .form-container {
+        width: 70%;
+        margin: 30px auto;
+    }
+    input.paste, .typeA, .domain {
+        width: 90%;
+    }
+    .button2 {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+    .Basic, .Team, .Professional {
+        padding: 5%;
+        margin-bottom: 20px;
+    }
+    .faq {
+        font-size: 14px;
+        padding: 20px;
+        text-align: center;
+      
+    }
+    .footer {
+        text-align: center;
+        padding: 20px;
+    }
+}
+summary{
+    list-style: none;
+}
+section{
+    border-bottom: 1px solid #ccc;
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        font-size: 12px;
+    }
+    .nav-logo, .nav-button {
+        padding: 0;
+    }
+    #scissors-text, .QR-Code, .pricing {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+    .form-container {
+        width: 90%;
+        margin: 10px auto;
+    }
+    input.paste, .typeA, .domain {
+        width: 100%;
+    }
+    .button2 {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .Basic, .Team, .Professional {
+        padding: 5%;
+        margin-bottom: 15px;
+    }
+    .faq {
+        font-size: 12px;
+        padding: 10px;
+    }
+    .footer {
+        font-size: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+    .last-page, .last-page2 {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    .get-price, .select-price {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; 
+        padding: 10px; 
+    }
+    nav {
+        flex-direction: column; 
+        gap: 20px;
+        text-align: center; 
+    }
+    .nav-logo {
+        padding-right: 0; 
+    }
+    .nav-button {
+        padding-left: 0;
+    }
+    #scissors-text, .QR-Code, .pricing {
+        flex-direction: column;
+        text-align: center; 
+        padding: 20px;
+    }
+    .button2 {
+        flex-direction: column; 
+        padding: 10px;
+        gap: 10px; 
+    }
+    .form-container {
+        width: 80%; 
+        margin: 20px auto;
+        padding: 15px;
+    }
+    input.paste, .typeA, .domain {
+        width: 100%; 
+    }
+    .Basic, .Team, .Professional {
+        margin: 15px 0; 
+    }
+    .faq {
+        padding: 15px;
+        text-align: center;
+    }
+    .last-page, .last-page2 {
+        flex-direction: column; 
+        text-align: center;
+    }
+    .footer {
+        text-align: center;
+        padding: 20px;
+    }
+}
+

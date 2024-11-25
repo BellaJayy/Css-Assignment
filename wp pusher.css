@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans' sans-serif;
+    font-size:18px;
+    line-height: 1.6;
+}
+
+.container{
+    background-color: #fff;
+    max-width: 1200px;
+    margin:0 auto;
+    padding:20px;
+}
+
+.image{
+    width: 150px;
+    margin: 20px;
+    padding: 10px;
+    height: auto;
+}
+
+.header-content{
+    display: flex;
+    align-items: center;
+    gap: 500px;
+}
+
+.list-item{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    
+}
+
+.list-item{
+    margin: 0;
+}
+
+.active {
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.checkout, .pricing {
+    border: 1px solid #ddd;
+    padding: 20px;
+    flex:2;
+    background-color:#fff;
+    border-radius:5px;
+}
+
+.checkout h1, .pricing h2{
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.checkout h2{
+    font-weight: normal;
+}
+
+.checkout form{
+    margin-bottom: 20px;
+}
+
+.checkout label{
+    display: block;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+.checkout input{
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.payment-info h2{
+    font-weight: normal;
+}
+
+.checkout button{
+    background-color:  #009688;
+    width: 80%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    display:inline-block;
+    color:#fff;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.link-text{
+    margin-bottom: 10px;
+}
+
+.span{
+    color: #000;
+    font-weight: bold;
+}
+
+.link-text a {
+    text-decoration: none;
+}
+
+.link-text a:hover{
+  text-decoration: underline;
+}
+
+.pricing{
+    flex: 1;
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.pricing h3{
+    margin-bottom: 15px;
+}
+
+.pricing p{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.pricing a{
+    color: #fff;
+}
+
+.pricing ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pricing li{
+    margin-bottom: 10px;
+}
+
+.testimonials img{
+    width: 50px;
+    border-radius: 20px;
+}
+
+
+.footer{
+text-align: center;
+font-size: 1rem;
+}
+@media(max-width: 768px){
+
+    .container{
+        padding: 10px;
+    
+}   
+    
+    
+    main{
+        flex-direction: column;
+        margin: 0 auto;
+        
+    }
+    
+    .checkout, .pricing {
+        width: 80%;    
+        margin-bottom: 20px;    
+    }
+    
+    .header-content{
+        flex-direction: column;
+        gap: 15px; 
+        padding-right: 20px; 
+    
+    }
+        
+        
+    .form-group input{
+        padding: 8px;
+    }
+
+    .pyament-info input{
+        width: 100%;    
+    }
+    
+    .pricing p{
+        font-size: 20px;    
+    }
+    
+    .pricing ul{
+        padding: 0;
+        margin: 0;  
+    
+    }
+    
+    .btn{
+        width: 100%;
+        text-align: center; 
+    }
+    
+    }
+
+    @media(max-width: 500px){
+        .container{
+            padding: 10px;
+        
+    }   
+        
+        
+        main{
+            flex-direction: column;
+            margin: 0 auto;
+            
+        }
+        
+        .checkout, .pricing {
+            width: 80%;    
+            margin-bottom: 20px;    
+        }
+        
+        .header-content{
+            flex-direction: column;
+            gap: 20px; 
+            padding-left: 20px;
+            font-size: 1rem; 
+        
+        }
+
+        .active{
+        border: none;
+        }
+            
+            
+        .form-group input{
+            padding: 8px;
+        }
+    
+        .pyament-info input{
+            width: 100%; 
+               
+        }
+        
+        .pricing p{
+            font-size: 20px;    
+        }
+        
+        .pricing ul{
+            padding: 0;
+            margin: 0;  
+        
+        }
+        
+        .btn{
+            width: 100%;
+            text-align: center; 
+        }
+
+        .footer{
+            text-align: center;
+            font-size: 1rem;
+            padding-right: 50px;
+        }
+        
+        }
